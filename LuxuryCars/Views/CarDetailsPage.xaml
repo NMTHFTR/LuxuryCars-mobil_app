@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="LuxuryCars.Views.CarDetailsPage"
+             Title="{Binding SelectedCar.marka_modelnev}" BackgroundColor="{StaticResource Gray900}">
+    <Grid RowDefinitions="4*,1*,4*,1*">
+        <Image Grid.Row="0" Source="{Binding SelectedCar.kep_Url}" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"/>
+        <Grid Grid.Row="1">
+            <RoundRectangle CornerRadius="40,40,40,40" Fill="{StaticResource Gray600}"/>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <Label   Text="Férőhely: " TextColor="{StaticResource Gray200}" Margin="36,0,0,0" FontSize="18"/>
+                <Label  Text="{Binding SelectedCar.ferohely}" FontAttributes="Bold" TextColor="{StaticResource Gray200}"  FontSize="18"/>
+ű
+                <Label Text="|" TextColor="{StaticResource Gray200}" HorizontalOptions="Center" Margin="60,0,60,0" FontSize="18"/>
+
+                <Label  Text="Lóerő: " TextColor="{StaticResource Gray200}"  FontSize="18"/>
+                <Label Text="{Binding SelectedCar.loero}" FontAttributes="Bold" TextColor="{StaticResource Gray200}" FontSize="18"/>
+            </StackLayout>
+        </Grid>
+        <toolkit:MediaElement Grid.Row="2" Source="{Binding SelectedCar.video_Url}"/>
+        <!--<Label Grid.Row="2" Text="{Binding SelectedCar.video_Url}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="White"/>-->
+        <Button Text="Lefoglalás most" Grid.Row="3" Margin="10"/>
+    </Grid>
+</ContentPage>

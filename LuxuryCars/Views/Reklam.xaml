@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LuxuryCars.Views.Reklam"
+             xmlns:rating="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             Title="Reklám"
+             BackgroundColor="{StaticResource Gray900 }">
+    <Grid RowDefinitions="0.16*,0.46*,0.30*,0.14*">
+        <Grid BackgroundColor="{StaticResource Gray600}"  RowDefinitions="*,*">
+        <Label Text="Eleged van hogy mindig elázol?" TextColor="{StaticResource Primary}" FontSize="23" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Label Grid.Row="1" Text="Máté alkalmazásával mindig tudni fogod milyen az időjárás!" TextColor="{StaticResource Primary}" FontSize="19" HorizontalTextAlignment="Center"   />
+        </Grid>
+        
+        <Grid Grid.Row="1" RowDefinitions="0.4*,0.2*,0.2*" Margin="20">
+            <RoundRectangle CornerRadius="20"  Fill="{StaticResource Gray600}" WidthRequest="320" Grid.RowSpan="2" />
+            <Grid Grid.Row="0" ColumnDefinitions=".3*,.7*" VerticalOptions="Start">
+                <Image Source="hmate.jpg" HeightRequest="70"  Margin="20,8,0,0"/>
+                <Label Grid.Column="1" Text="''A szerep, a szerek, hogy egyedül megyek, ayy
+A gyerek, a négy fal, hogy senki se szeret''" FontAttributes="Italic" TextColor="{StaticResource Gray200}" Margin="4,10,0,0"/>
+            </Grid>
+            <Label Grid.Row="1" Text="A legjobb időjárás alkalmazás a földön!" FontAttributes="Bold" FontSize="23" TextColor="{StaticResource Primary}" Margin="40,00,40,0"  HorizontalOptions="Center"/>
+            <Label Grid.Row="2" Text="Mit garantál az alkalmazás?" FontAttributes="Bold" TextColor="{StaticResource Gray200}" Margin="20,10,0,0" VerticalOptions="Center"  FontSize="20"/>
+        </Grid>
+        <Grid Grid.Row="2" RowDefinitions="*,*,*" ColumnDefinitions="0.3*,0.7*"  VerticalOptions="Center" Margin="0,0,0,50">
+           
+                <Image Grid.Row="0" Grid.Column="0" Source="idologo.png" WidthRequest="45" HorizontalOptions="Center" Margin="10"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="Pénzért akár a hold időjárását is megmondja" FontSize="Body" TextColor="{StaticResource Gray200}" />
+
+
+
+            <Image Grid.Row="1" Grid.Column="0" Source="idologo.png" WidthRequest="45" HorizontalOptions="Center"  Margin="10"/>
+            <Label Grid.Row="1" Grid.Column="1" FontSize="Body" Text="A stílus mindig pacek" TextColor="{StaticResource Gray200}" VerticalOptions="Center"/>
+
+            <Image Grid.Row="2" Grid.Column="0" Source="idologo.png" WidthRequest="45" HorizontalOptions="Center"  Margin="10"/>
+            <StackLayout Grid.Row="2" Grid.Column="2">
+                <Label Grid.Row="2" Grid.Column="1" FontSize="Body" Text="Értékelés: 5/2,2" TextColor="{StaticResource Gray200}"/>
+                <rating:SfRating  BackgroundColor="Transparent" HorizontalOptions="Start" ItemSize="15" Precision="Exact" Value="2.2">
+                    <rating:SfRating.RatingSettings>
+                        <rating:RatingSettings RatedFill="{StaticResource Yellow100Accent}"
+                   RatedStroke="{StaticResource Yellow100Accent}"
+                   UnratedFill="gray"
+                   UnratedStroke="gray"/>
+                    </rating:SfRating.RatingSettings>
+                </rating:SfRating>
+            </StackLayout>
+            
+
+
+        </Grid>
+        <ImageButton Grid.Row="3" Source="idojaras.jpg" VerticalOptions="EndAndExpand" WidthRequest="500"/>
+    </Grid>
+</ContentPage>

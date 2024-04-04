@@ -1,0 +1,215 @@
+{
+  "data": [
+      {
+        "id": 1,
+        "marka_modelnev": "Porsche 911",
+        "ferohely": 2,
+        "loero": 490,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/PORSCHE-911-GT3-RS-5648_11.jpg"
+      },
+      {
+        "id": 2,
+        "marka_modelnev": "Ferrari 488 GTB",
+        "ferohely": 2,
+        "loero": 670,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/FERRARI-488-GTB-5428_13.jpg"
+      },
+      {
+        "id": 3,
+        "marka_modelnev": "Lamborghini Huracan LP 610-4",
+        "ferohely": 2,
+        "loero": 610,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/LAMBORGHINI-Huracan-LP-610-4-5078_24.jpg"
+      },
+      {
+        "id": 4,
+        "marka_modelnev": "Audi R8 V10 Performance",
+        "ferohely": 2,
+        "loero": 570,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/audi-r8-v10-performance-rwd-spyder-2021-7219_19.jpg"
+      },
+      {
+        "id": 5,
+        "marka_modelnev": "Mercedes-AMG GT",
+        "ferohely": 2,
+        "loero": 530,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/Mercedes-AMG-GT-R-Roadster-6538_23.jpg"
+      },
+      {
+        "id": 6,
+        "marka_modelnev": "BMW M8 Coupe (F92)",
+        "ferohely": 4,
+        "loero": 600,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/BMW-M8-Coupe-6590_26.jpg"
+      },
+      {
+        "id": 7,
+        "marka_modelnev": "Aston Martin Vantage",
+        "ferohely": 2,
+        "loero": 510,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/ASTON-MARTIN-Vantage-6179_18.jpg"
+      },
+      {
+        "id": 8,
+        "marka_modelnev": "McLaren 720S",
+        "ferohely": 2,
+        "loero": 720,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/MCLAREN-720S-5952_11.jpg"
+      },
+      {
+        "id": 9,
+        "marka_modelnev": "Jaguar F-Type",
+        "ferohely": 2,
+        "loero": 575,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/JAGUAR-F-Type-400-Coupe-5876_12.jpg"
+      },
+      {
+        "id": 10,
+        "marka_modelnev": "Lexus LC",
+        "ferohely": 4,
+        "loero": 471,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/LEXUS-LC-5776_21.jpg"
+      },
+      {
+        "id": 11,
+        "marka_modelnev": "Tesla Model S Plaid",
+        "ferohely": 5,
+        "loero": 1020,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/TESLA-MOTORS-Model-S-5659_8.jpg"
+      },
+      {
+        "id": 12,
+        "marka_modelnev": "Chevrolet Corvette Stingray",
+        "ferohely": 2,
+        "loero": 490,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/CHEVROLETCorvetteStingrayC7-4719_3.jpg"
+      },
+      {
+        "id": 13,
+        "marka_modelnev": "Bentley Continental GT",
+        "ferohely": 4,
+        "loero": 626,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/BENTLEY-Continental-GTC-6460_13.jpg"
+      },
+      {
+        "id": 14,
+        "marka_modelnev": "Rolls-Royce Wraith",
+        "ferohely": 4,
+        "loero": 624,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/ROLLS-ROYCE-Wraith-4791_29.jpg"
+      },
+      {
+        "id": 15,
+        "marka_modelnev": "Maserati GranTurismo",
+        "ferohely": 4,
+        "loero": 454,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/MASERATI-GranTurismo-6046_21.jpg"
+      },
+      {
+        "id": 16,
+        "marka_modelnev": "Alfa Romeo 4C",
+        "ferohely": 2,
+        "loero": 237,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/ALFA-ROMEO-4C-4765_38.jpg"
+      },
+      {
+        "id": 17,
+        "marka_modelnev": "Acura NSX",
+        "ferohely": 2,
+        "loero": 573,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/ACURA-NSX-5663_26.jpg"
+      },
+      {
+        "id": 18,
+        "marka_modelnev": "Lotus Evora",
+        "ferohely": 2,
+        "loero": 416,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/LOTUS-Evora-GT430-6065_12.jpg"
+      },
+      {
+        "id": 19,
+        "marka_modelnev": "Nissan GT-R",
+        "ferohely": 4,
+        "loero": 565,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/NISSAN-GT-R-5603_18.jpg"
+      },
+      {
+        "id": 20,
+        "marka_modelnev": "Audi RS7",
+        "ferohely": 4,
+        "loero": 591,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/AUDI-RS7-Sportback-6663_18.jpg"
+      },
+      {
+        "id": 21,
+        "marka_modelnev": "Bugatti Chiron",
+        "ferohely": 2,
+        "loero": 1500,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/BUGATTI-Chiron-5583_35.jpg"
+      },
+      {
+        "id": 22,
+        "marka_modelnev": "Dodge Challenger SRT Demon",
+        "ferohely": 2,
+        "loero": 710,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/DODGE-Challenger-SRT-Demon-5978_19.jpg"
+      },
+      {
+        "id": 23,
+        "marka_modelnev": "Ferrari SF90 Stradale",
+        "ferohely": 2,
+        "loero": 986,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/FERRARI-SF90-Stradale-6586_20.jpg"
+      },
+      {
+        "id": 24,
+        "marka_modelnev": "Porsche Taycan Turbo S",
+        "ferohely": 4,
+        "loero": 750,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/PORSCHE-Taycan-Turbo-6659_25.jpg"
+      },
+      {
+        "id": 25,
+        "marka_modelnev": "Lamborghini Aventador SVJ",
+        "ferohely": 2,
+        "loero": 770,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/LAMBORGHINI-Aventador-SVJ-6434_3.jpeg"
+      },
+      {
+        "id": 26,
+        "marka_modelnev": "McLaren P1",
+        "ferohely": 2,
+        "loero": 903,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/MCLARENP1-4777_4.jpg"
+      },
+      {
+        "id": 27,
+        "marka_modelnev": "Pagani Huayra",
+        "ferohely": 2,
+        "loero": 720,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/PAGANI-Huayra-5246_29.jpg"
+      },
+      {
+        "id": 28,
+        "marka_modelnev": "Ford GT",
+        "ferohely": 2,
+        "loero": 660,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/FORD-GT-5662_26.jpg"
+      },
+      {
+        "id": 29,
+        "marka_modelnev": "Aston Martin DBS Superleggera",
+        "ferohely": 2,
+        "loero": 715,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/ASTON-MARTIN-DBS-Superleggera-6384_29.jpg"
+      },
+      {
+        "id": 30,
+        "marka_modelnev": "Lexus LFA",
+        "ferohely": 2,
+        "loero": 552,
+        "kep_Url": "https:\/\/s1.cdn.autoevolution.com\/images\/gallery\/LEXUS-LFA-4155_22.jpg"
+      }
+  ],
+  "to": 10
+}
