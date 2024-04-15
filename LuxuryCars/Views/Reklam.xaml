@@ -18,7 +18,7 @@
                 <Label Grid.Column="1" Text="''A szerep, a szerek, hogy egyedül megyek, ayy
 A gyerek, a négy fal, hogy senki se szeret''" FontAttributes="Italic" TextColor="{StaticResource Gray200}" Margin="4,10,0,0"/>
             </Grid>
-            <Label Grid.Row="1" Text="A legjobb időjárás alkalmazás a földön!" FontAttributes="Bold" FontSize="23" TextColor="{StaticResource Primary}" Margin="40,00,40,0"  HorizontalOptions="Center"/>
+            <Label Grid.Row="1" Text="A  legjobb időjárás alkalmazás a földön!" FontAttributes="Bold" FontSize="23" TextColor="{StaticResource Primary}" Margin="40,00,40,0"  HorizontalOptions="Center"/>
             <Label Grid.Row="2" Text="Mit garantál az alkalmazás?" FontAttributes="Bold" TextColor="{StaticResource Gray200}" Margin="20,10,0,0" VerticalOptions="Center"  FontSize="20"/>
         </Grid>
         <Grid Grid.Row="2" RowDefinitions="*,*,*" ColumnDefinitions="0.3*,0.7*"  VerticalOptions="Center" Margin="0,0,0,50">
