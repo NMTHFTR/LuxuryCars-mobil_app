@@ -20,7 +20,7 @@ namespace LuxuryCars.Models
         public int ferohely { get; set; }
         public int loero { get; set; }
         public string kep_Url { get; set; }
-        public string video_Url { get; set; }
+        public string leiras { get; set; }
     }
 
 }

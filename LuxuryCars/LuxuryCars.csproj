@@ -78,6 +78,9 @@
 	  <MauiXaml Update="Views\CarsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Fotok.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Reklam.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

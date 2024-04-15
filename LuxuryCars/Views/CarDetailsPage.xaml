@@ -4,10 +4,12 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="LuxuryCars.Views.CarDetailsPage"
              Title="{Binding SelectedCar.marka_modelnev}" BackgroundColor="{StaticResource Gray900}">
-    <Grid RowDefinitions="4*,1*,4*,1*">
-        <Image Grid.Row="0" Source="{Binding SelectedCar.kep_Url}" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"/>
-        <Grid Grid.Row="1">
-            <RoundRectangle CornerRadius="40,40,40,40" Fill="{StaticResource Gray600}"/>
+    
+    <ScrollView>
+        <StackLayout>
+        <Image Source="{Binding SelectedCar.kep_Url}" VerticalOptions="StartAndExpand" WidthRequest="490"/>
+        <Grid Margin="10,20,10,0" >
+            <RoundRectangle CornerRadius="40,40,40,40" HeightRequest="70" Fill="{StaticResource Gray600}"/>
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                 <Label   Text="Férőhely: " TextColor="{StaticResource Gray200}" Margin="36,0,0,0" FontSize="18"/>
                 <Label  Text="{Binding SelectedCar.ferohely}" FontAttributes="Bold" TextColor="{StaticResource Gray200}"  FontSize="18"/>
@@ -18,8 +20,13 @@
                 <Label Text="{Binding SelectedCar.loero}" FontAttributes="Bold" TextColor="{StaticResource Gray200}" FontSize="18"/>
             </StackLayout>
         </Grid>
-        <toolkit:MediaElement Grid.Row="2" Source="{Binding SelectedCar.video_Url}" ShouldShowPlaybackControls="True"/>
-        <!--<Label Grid.Row="2" Text="{Bindaaing SelectedCar.video_Url}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="White"/>-->
-        <Button Text="Lefoglalás most" Grid.Row="3" Margin="10" Command="{Binding}"/>
-    </Grid>
+            <Label  Text="Leírás: " TextColor="{StaticResource Gray200}"  Margin="30,30,10,10" FontSize="30"/>
+            <Label Text="{Binding SelectedCar.leiras}" FontAttributes="Bold" TextColor="{StaticResource Gray200}" FontSize="18" Grid.Row="2" VerticalOptions="Center" WidthRequest="325" />
+       
+        
+        <Button Text="Lefoglalás most" Grid.Row="3" Margin="10,40,10,10" Command="{Binding}" VerticalOptions="EndAndExpand"  FontSize="20"/>
+        </StackLayout>
+    </ScrollView>
+       
+    
 </ContentPage>

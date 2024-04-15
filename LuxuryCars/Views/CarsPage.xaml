@@ -9,12 +9,12 @@
         <tool:EventToCommandBehavior Command="{Binding AppearingCommand}" EventName="Appearing"/>
     </ContentPage.Behaviors>
     <Grid RowDefinitions="0.09*,0.91*">
-    <Label Text="Kinálatunk:" FontSize="21" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{StaticResource Gray600}"  TextColor="{StaticResource Primary}"/>
+        <Label Text="Kinálatunk:" FontSize="21" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{StaticResource Gray600}"  TextColor="{StaticResource Primary}"/>
     <CollectionView ItemsSource="{Binding Cars}" SelectionMode="Single" Margin="10" Grid.Row="1" SelectedItem="{Binding SelectedCar}">
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*" Margin="5" BackgroundColor="{StaticResource Gray400}">
-                    <Image Source="{Binding kep_Url}" Grid.RowSpan="2"/>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*" Margin="5" BackgroundColor="{StaticResource Gray400}">
+                        <Image Source="{Binding kep_Url}" Grid.RowSpan="2"/>
                     <Label Text="{Binding marka_modelnev}" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"  Margin="5"/>
                     <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="5">
                         <Image Source="{x:StaticResource Seats}"/>

@@ -27,6 +27,7 @@
     </Shell.ItemTemplate>
     <ShellContent Title="Főoldal" ContentTemplate="{DataTemplate views:MainPage}"/>
     <ShellContent Title="Autólista" ContentTemplate="{DataTemplate views:CarsPage}"/>
+    <ShellContent Title="Média tartalmak" ContentTemplate="{DataTemplate views:Fotok}"/>
     <ShellContent Title="Rólunk" ContentTemplate="{DataTemplate views:Rolunk}"/>
     <ShellContent Title="Reklám" ContentTemplate="{DataTemplate views:Reklam}"/>
 </Shell>
