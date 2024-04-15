@@ -11,9 +11,10 @@
         <CarouselView.ItemTemplate>
             <DataTemplate>
                 <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <toolkit:MediaElement  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="{Binding .}"
+                    <Frame>
+                        <toolkit:MediaElement  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="{Binding .}"
               ShouldShowPlaybackControls="True" ShouldAutoPlay="True" />
-                   
+                    </Frame>
                 </StackLayout>
                 
             </DataTemplate>
