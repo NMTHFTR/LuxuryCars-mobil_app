@@ -11,15 +11,15 @@
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                 <Label   Text="Férőhely: " TextColor="{StaticResource Gray200}" Margin="36,0,0,0" FontSize="18"/>
                 <Label  Text="{Binding SelectedCar.ferohely}" FontAttributes="Bold" TextColor="{StaticResource Gray200}"  FontSize="18"/>
-ű
+
                 <Label Text="|" TextColor="{StaticResource Gray200}" HorizontalOptions="Center" Margin="60,0,60,0" FontSize="18"/>
 
                 <Label  Text="Lóerő: " TextColor="{StaticResource Gray200}"  FontSize="18"/>
                 <Label Text="{Binding SelectedCar.loero}" FontAttributes="Bold" TextColor="{StaticResource Gray200}" FontSize="18"/>
             </StackLayout>
         </Grid>
-        <toolkit:MediaElement Grid.Row="2" Source="{Binding SelectedCar.video_Url}"/>
+        <toolkit:MediaElement Grid.Row="2" Source="{Binding SelectedCar.video_Url}" ShouldShowPlaybackControls="True"/>
         <!--<Label Grid.Row="2" Text="{Binding SelectedCar.video_Url}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="White"/>-->
-        <Button Text="Lefoglalás most" Grid.Row="3" Margin="10"/>
+        <Button Text="Lefoglalás most" Grid.Row="3" Margin="10" Command="{Binding}"/>
     </Grid>
 </ContentPage>

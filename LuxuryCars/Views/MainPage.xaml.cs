@@ -1,7 +1,7 @@
 ﻿using LuxuryCars.ViewModels;
 
-namespace LuxuryCars.Views
-{
+namespace LuxuryCars.Views;
+
     public partial class MainPage : ContentPage
     {
 
@@ -13,4 +13,3 @@ namespace LuxuryCars.Views
 
         
     }
-}

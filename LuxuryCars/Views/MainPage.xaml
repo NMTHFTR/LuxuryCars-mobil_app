@@ -55,6 +55,6 @@
             <Label FontSize="18" Text="Az applikáció célja" FontAttributes="Bold" TextColor="{StaticResource Primary}" VerticalTextAlignment="Center"/>
             <Label Grid.Row="1" Text="Az alkalmazást az év végi weboldal projektünk mellé terveztünk. A mobil applikáció feladata, hogy a kinálatban szereplő autókat részletesebben bemutassa, és extra tartalmakat tárjon fel az autókról." TextColor="{StaticResource Gray200}"/>
         </Grid>
-        <Button Grid.Row="4" Margin="15,0" BackgroundColor="{StaticResource Primary}" CornerRadius="30" FontAttributes="Bold" FontSize="18" HeightRequest="50" Text="Vágjunk bele!" TextColor="{StaticResource Gray900}"/>
+        <Button Grid.Row="4" Margin="15,0" BackgroundColor="{StaticResource Primary}" CornerRadius="30" FontAttributes="Bold" FontSize="18" HeightRequest="50" Text="Vágjunk bele!" Command="{Binding goToCars}" TextColor="{StaticResource Gray900}"/>
     </Grid>
 </ContentPage>

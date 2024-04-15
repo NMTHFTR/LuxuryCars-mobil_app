@@ -6,7 +6,7 @@ namespace LuxuryCars
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute("Cars", typeof(CarsPage));
+            Routing.RegisterRoute(nameof(CarsPage), typeof(CarsPage));
             Routing.RegisterRoute(nameof(CarDetailsPage), typeof(CarDetailsPage));
         }
     }

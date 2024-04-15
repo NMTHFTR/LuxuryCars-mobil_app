@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace LuxuryCars.ViewModels
 {
@@ -15,6 +16,20 @@ namespace LuxuryCars.ViewModels
         Car selectedCar;
 
 
+        public ICommand goToCars { get; set; }
+
+        public CarDetailsViewModel()
+        {
+            goToCars = new Command(async () => {
+                await Shell.Current.GoToAsync("localhost:");
+            });
+
+
+
+           
+        }
 
     }
+
+    
 }

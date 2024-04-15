@@ -23,7 +23,7 @@
         </Grid>
         <Grid Grid.Row="3" RowDefinitions="*,*" Margin="0,30,0,0">
             <Image Source="oldal3.png" />
-            <Button Text="irány a weboldal" Grid.Row="1" Margin="10" HeightRequest="70"/>
+            <Button Text="irány a weboldal" Grid.Row="1" Margin="10" HeightRequest="70" Clicked="Button_Clicked"/>
         </Grid>
  
         
