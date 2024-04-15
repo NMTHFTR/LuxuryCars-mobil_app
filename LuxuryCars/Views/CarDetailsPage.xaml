@@ -19,7 +19,7 @@
             </StackLayout>
         </Grid>
         <toolkit:MediaElement Grid.Row="2" Source="{Binding SelectedCar.video_Url}" ShouldShowPlaybackControls="True"/>
-        <!--<Label Grid.Row="2" Text="{Binding SelectedCar.video_Url}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="White"/>-->
+        <!--<Label Grid.Row="2" Text="{Bindaaing SelectedCar.video_Url}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="White"/>-->
         <Button Text="Lefoglalás most" Grid.Row="3" Margin="10" Command="{Binding}"/>
     </Grid>
 </ContentPage>
