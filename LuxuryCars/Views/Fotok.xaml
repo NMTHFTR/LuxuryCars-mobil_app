@@ -4,20 +4,25 @@
              x:Class="LuxuryCars.Views.Fotok"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="Fotok">
-    <CarouselView ItemsSource="{Binding Videos}">
-        <CarouselView.ItemsLayout>
-            <LinearItemsLayout Orientation="Vertical" />
-        </CarouselView.ItemsLayout>
-        <CarouselView.ItemTemplate>
-            <DataTemplate>
-                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <Frame>
-                        <toolkit:MediaElement  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="{Binding .}"
-              ShouldShowPlaybackControls="True" ShouldAutoPlay="True" />
-                    </Frame>
-                </StackLayout>
-                
-            </DataTemplate>
-        </CarouselView.ItemTemplate>
-    </CarouselView>
+    <VerticalStackLayout>
+        <CarouselView IndicatorView="indicatorView" x:Name="CaruselView">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout Padding="10">
+                        <toolkit:MediaElement x:Name="mediaElement"
+                      ShouldAutoPlay="True"
+                      ShouldShowPlaybackControls="True"
+                      Source="{Binding title}"
+                      HeightRequest="300"
+                      WidthRequest="400"
+                       />
+                        <Label Text="{Binding title}" FontSize="Medium" HorizontalTextAlignment="Center" WidthRequest="400"/>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <IndicatorView x:Name="indicatorView" Margin="5" HorizontalOptions="Center" IndicatorColor="Green" SelectedIndicatorColor="Red"/>
+    
+    </VerticalStackLayout>
+    
 </ContentPage>
