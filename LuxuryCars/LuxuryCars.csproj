@@ -50,10 +50,20 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\fa_solid.ttf" />
+	  <None Remove="Resources\Images\kep1.jpg" />
+	  <None Remove="Resources\Images\kep2.jpg" />
+	  <None Remove="Resources\Images\kep3.jpg" />
+	  <None Remove="Resources\Images\kep4.jpg" />
+	  <None Remove="Resources\Images\kep5.jpg" />
+	  <None Remove="Resources\Images\kep6.jpg" />
 	  <None Remove="Resources\Images\oldal1.png" />
 	  <None Remove="Resources\Images\oldal2.png" />
 	  <None Remove="Resources\Images\oldal3.png" />
+	  <None Remove="Resources\Raw\911_GT3.mp4" />
 	  <None Remove="Resources\Raw\car.json" />
+	  <None Remove="Resources\Raw\Ferrari_488_GTB.mp4" />
+	  <None Remove="Resources\Raw\Lamborghini.mp4" />
+	  <None Remove="Resources\Raw\M8.mp4" />
 	</ItemGroup>
 
 	<ItemGroup>
