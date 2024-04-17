@@ -4,7 +4,7 @@
              x:Class="LuxuryCars.Views.SearchByName"
              Title="SearchByName">
     <VerticalStackLayout Margin="10">
-        <Label Text="Title:" FontSize="Medium"/>
+        <Label Text="Title: " FontSize="Medium"/>
         <Entry Text="{Binding name}" ReturnCommand="{Binding returnCommand}"/>
     </VerticalStackLayout>
 </ContentPage>
