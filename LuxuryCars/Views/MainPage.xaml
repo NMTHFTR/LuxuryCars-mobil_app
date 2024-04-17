@@ -49,7 +49,7 @@
                     <Label FontSize="14" Grid.Row="1" Text="Kiszolgálás" TextColor="{StaticResource Gray200}" />
                 </Grid>
             </Grid>
-            <Image x:Name="kerek_IMG" WidthRequest="500" Grid.Column="1" Margin="100,0,0,0" Source="kerek2.png" />
+            <ImageButton x:Name="kerek_IMG"  Command="{Binding forgasCommand}"  WidthRequest="500" Grid.Column="1" Margin="100,0,0,0" Source="kerek2.png" />
         </Grid>
         <Grid Grid.Row="3" Margin="20,20,20,0" RowDefinitions=".29*,.71*">
             <Label FontSize="18" Text="Az applikáció célja" FontAttributes="Bold" TextColor="{StaticResource Primary}" VerticalTextAlignment="Center"/>

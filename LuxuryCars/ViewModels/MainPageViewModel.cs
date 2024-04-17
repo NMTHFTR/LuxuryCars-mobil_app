@@ -15,23 +15,29 @@ namespace LuxuryCars.ViewModels
     public partial class MainPageViewModel : ObservableObject
     {
         [RelayCommand]
-        async void Appearing(object? parameter)
+        async void forgas(object? parameter)
         {
-
-            try 
-            {
-               
-                while (true)
-                {
-                    Image img = (Image)parameter;
-                    await img.RotateTo(9720, 50000);
-                }
-            } 
-            catch(Exception ex)
-            { 
-
-            }
+            Image img = (Image)parameter;
+            await img.RotateTo(9720, 50000);
         }
+
+        //async void Appearing(object? parameter)
+        //{
+
+        //    try 
+        //    {
+               
+        //        //while (true)
+        //        //{
+        //        //    Image img = (Image)parameter;
+        //        //    await img.RotateTo(9720, 50000);
+        //        //}
+        //    } 
+        //    catch(Exception ex)
+        //    { 
+
+        //    }
+        //}
 
         public ICommand goToCars { get; set; }
 

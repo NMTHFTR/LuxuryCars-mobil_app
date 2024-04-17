@@ -14,7 +14,7 @@
                 <Label   Text="Férőhely: " TextColor="{StaticResource Gray200}" Margin="36,0,0,0" FontSize="18"/>
                 <Label  Text="{Binding SelectedCar.ferohely}" FontAttributes="Bold" TextColor="{StaticResource Gray200}"  FontSize="18"/>
 
-                <Label Text="|" TextColor="{StaticResource Gray200}" HorizontalOptions="Center" Margin="60,0,60,0" FontSize="18"/>
+                <Label Text="|" TextColor="{StaticResource Gray200}" HorizontalOptions="Center" Margin="55,0,60,0" FontSize="18"/>
 
                 <Label  Text="Lóerő: " TextColor="{StaticResource Gray200}"  FontSize="18"/>
                 <Label Text="{Binding SelectedCar.loero}" FontAttributes="Bold" TextColor="{StaticResource Gray200}" FontSize="18"/>

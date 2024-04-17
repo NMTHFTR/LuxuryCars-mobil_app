@@ -16,6 +16,8 @@
         </Grid>
     </Shell.FlyoutHeader>
 
+    
+
     <Shell.ItemTemplate>
         <DataTemplate>
             <Grid ColumnDefinitions="2*,8*" RowDefinitions="5*,*" >
@@ -30,4 +32,13 @@
     <ShellContent Title="Média tartalmak" ContentTemplate="{DataTemplate views:Fotok}"/>
     <ShellContent Title="Rólunk" ContentTemplate="{DataTemplate views:Rolunk}"/>
     <ShellContent Title="Reklám" ContentTemplate="{DataTemplate views:Reklam}"/>
+
+    <FlyoutItem Title="Cars">
+    <Tab Title="Autók" >
+        <ShellContent ContentTemplate="{DataTemplate views:CarsPage}" Route="books"/>
+    </Tab>
+    <Tab Title="Keresés">
+        <ShellContent ContentTemplate="{DataTemplate views:SearchByName}"/>
+    </Tab>
+</FlyoutItem>
 </Shell>
