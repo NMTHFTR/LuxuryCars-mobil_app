@@ -24,7 +24,7 @@
             </Grid>
         </Grid>
         <Grid Grid.Row="3" RowDefinitions="*,*" Margin="0,30,0,0">
-            <maps:Map x:Name="terkep" WidthRequest="300" HeightRequest="300"/>
+            <maps:Map x:Name="terkep" WidthRequest="300" HeightRequest="350"/>
             <Button Text="irány a weboldal" Grid.Row="1" Margin="10" HeightRequest="70" Clicked="Button_Clicked"/>
         </Grid>
 
