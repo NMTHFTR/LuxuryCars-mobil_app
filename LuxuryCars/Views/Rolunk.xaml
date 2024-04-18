@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"     
+            
              x:Class="LuxuryCars.Views.Rolunk"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
              Title="Rólunk" Background="{StaticResource Gray900}">
-    <Grid RowDefinitions="0.08*,0.25*,0.25*,0.42*" >
+    <Grid RowDefinitions="0.08*,0.2*,0.2*,0.42*" >
         <Label Text="Csoportmunkában vállalt feladataink:" FontSize="21" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="{StaticResource Gray600}"  TextColor="{StaticResource Primary}"/>
-        <Grid Grid.Row="1"  ColumnDefinitions="0.6*,0.4*" Margin="0,40,0,15">
+        <Grid Grid.Row="1"  ColumnDefinitions="0.6*,0.4*" Margin="0,20,0,0">
             <Grid RowDefinitions="*,*">
                 <RoundRectangle Grid.RowSpan="2" CornerRadius="0,40,0,40" Fill="{StaticResource Gray600}"/>
-                <Label Margin="20" Text="Rómeó" FontAttributes="Bold" TextColor="{StaticResource Primary}" FontSize="21"/>
-                <Label Margin="20,10,20,20" Grid.Row="1" Text="Backend programozása" TextColor="{StaticResource Gray200}"/>
+                <Label Margin="20,10,0,0" Text="Rómeó" FontAttributes="Bold" TextColor="{StaticResource Primary}" FontSize="21"/>
+                <Label Margin="20,10,20,0" Grid.Row="1" Text="Backend programozása" TextColor="{StaticResource Gray200}"/>
             </Grid>
             <Image Grid.Column="1" Source="oldal1.png" WidthRequest="300" Margin="0,0,-140,0"/>
         </Grid>
-        <Grid Grid.Row="2" ColumnDefinitions="0.4*,0.6*" Margin="0,30,0,20">
+        <Grid Grid.Row="2" ColumnDefinitions="0.4*,0.6*" Margin="0,10,0,0">
             <Image Source="oldal2.png"  HeightRequest="300" Margin="-80,0,0,0"/>
             <Grid RowDefinitions="*,*" Grid.Column="1">
                 <RoundRectangle Grid.RowSpan="2" CornerRadius="40,0,40,0" Fill="{StaticResource Gray600}"/>
                 <Label Margin="30,20,10,10" Text="Én" FontAttributes="Bold" TextColor="{StaticResource Primary}" FontSize="21" />
-                <Label Margin="30,10,10,10" Grid.Row="1" Text="MAUI program elkészítése" TextColor="{StaticResource Gray200}"/>
+                <Label Margin="30,10,10,0" Grid.Row="1" Text="MAUI program elkészítése" TextColor="{StaticResource Gray200}"/>
             </Grid>
         </Grid>
         <Grid Grid.Row="3" RowDefinitions="*,*" Margin="0,30,0,0">
-            <Image Source="oldal3.png" />
+            <maps:Map x:Name="terkep" WidthRequest="300" HeightRequest="300"/>
             <Button Text="irány a weboldal" Grid.Row="1" Margin="10" HeightRequest="70" Clicked="Button_Clicked"/>
         </Grid>
- 
-        
+
     </Grid>
 </ContentPage>

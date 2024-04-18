@@ -22,4 +22,24 @@ public partial class Fotok : ContentPage
         CaruselView.ItemsSource = items;
         
     }
+
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+        try
+        {
+            Uri uri = new Uri("https://bgs.jedlik.eu/luxurycars/car");
+            await Browser.Default.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
+        }
+        catch (Exception ex)
+        {
+            // An unexpected error occurred. No browser may be installed on the device.
+        }
+    }
+
+    private async void ImageButton_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(CarsPage));
+    }
+
+    
 }

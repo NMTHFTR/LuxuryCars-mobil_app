@@ -53,14 +53,14 @@
             HeightRequest="300"
             WidthRequest="400"/>
             <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*" Margin="10">
-                <Image Grid.Row="0" Grid.Column="0" Source="kep1" HeightRequest="110" Margin="0,0,0,15"/>
-                <Image Grid.Row="0" Grid.Column="1" Source="kep2" HeightRequest="110" Margin="0,0,0,15"/>
-                <Image Grid.Row="0" Grid.Column="2" Source="kep3" HeightRequest="110" Margin="0,0,0,15"/>
-                <Image Grid.Row="1" Grid.Column="0" Source="kep4" HeightRequest="110" Margin="0,0,0,15"/>
-                <Image Grid.Row="1" Grid.Column="1" Source="kep5" HeightRequest="110" Margin="0,0,0,15"/>
-                <Image Grid.Row="1" Grid.Column="2" Source="kep6" HeightRequest="110" Margin="0,0,0,15"/>
+                <ImageButton Grid.Row="0" Grid.Column="0" Source="kep1" HeightRequest="110" Margin="0,0,0,15" Clicked="ImageButton_Clicked"/>
+                <ImageButton Grid.Row="0" Grid.Column="1" Source="kep2" HeightRequest="110" Margin="0,0,0,15" Clicked="ImageButton_Clicked"/>
+                <ImageButton Grid.Row="0" Grid.Column="2" Source="kep3" HeightRequest="110" Margin="0,0,0,15" Clicked="ImageButton_Clicked"/>
+                <ImageButton Grid.Row="1" Grid.Column="0" Source="kep4" HeightRequest="110" Margin="0,0,0,15" Clicked="ImageButton_Clicked"/>
+                <ImageButton Grid.Row="1" Grid.Column="1" Source="kep5" HeightRequest="110" Margin="0,0,0,15" Clicked="ImageButton_Clicked"/>
+                <ImageButton Grid.Row="1" Grid.Column="2" Source="kep6" HeightRequest="110" Margin="0,0,0,15" Clicked="ImageButton_Clicked"/>
             </Grid>
-            <Button Text="Foglald le" FontAttributes="Bold" FontSize="20" Margin="10"/>
+            <Button Text="Foglald le" FontAttributes="Bold" FontSize="20" Margin="10" Clicked="Button_Clicked"/>
         </VerticalStackLayout>
     </ScrollView>
 

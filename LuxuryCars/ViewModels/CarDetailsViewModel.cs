@@ -21,7 +21,15 @@ namespace LuxuryCars.ViewModels
         public CarDetailsViewModel()
         {
             goToCars = new Command(async () => {
-                await Shell.Current.GoToAsync("localhost:");
+                try
+                {
+                    Uri uri = new Uri("https://bgs.jedlik.eu/luxurycars/car");
+                    await Browser.Default.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
+                }
+                catch (Exception ex)
+                {
+                    // An unexpected error occurred. No browser may be installed on the device.
+                }
             });
 
 

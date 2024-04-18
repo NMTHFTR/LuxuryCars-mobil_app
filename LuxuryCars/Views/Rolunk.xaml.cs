@@ -11,9 +11,18 @@ public partial class Rolunk : ContentPage
         InitializeComponent();
         
     }
+   
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("localhost:");
+        try
+        {
+            Uri uri = new Uri("https://bgs.jedlik.eu/luxurycars/");
+            await Browser.Default.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
+        }
+        catch (Exception ex)
+        {
+            // An unexpected error occurred. No browser may be installed on the device.
+        }
     }
 }

@@ -22,9 +22,9 @@
         </Grid>
             <Label  Text="Leírás: " TextColor="{StaticResource Gray200}"  Margin="30,30,10,10" FontSize="30"/>
             <Label Text="{Binding SelectedCar.leiras}" FontAttributes="Bold" TextColor="{StaticResource Gray200}" FontSize="18" Grid.Row="2" VerticalOptions="Center" WidthRequest="325" />
-       
-        
-        <Button Text="Lefoglalás most" Grid.Row="3" Margin="10,40,10,10" Command="{Binding}" VerticalOptions="EndAndExpand"  FontSize="20"/>
+
+
+            <Button Text="Lefoglalás most" Grid.Row="3" Margin="10,40,10,10" Command="{Binding goToCars}" VerticalOptions="EndAndExpand"  FontSize="20"/>
         </StackLayout>
     </ScrollView>
        

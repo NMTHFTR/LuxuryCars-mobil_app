@@ -3,6 +3,7 @@ using LuxuryCars.Views;
 using Microsoft.Extensions.Logging;
 using Syncfusion.Maui.Core.Hosting;
 using CommunityToolkit.Maui;
+using CommunityToolkit.Maui.Maps;
 
 namespace LuxuryCars
 {
@@ -15,6 +16,7 @@ namespace LuxuryCars
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkitMediaElement()
                 .UseMauiCommunityToolkit()
+                .UseMauiCommunityToolkitMaps("AvDFMHHaEJW-k6PvsePZdAT8cJgk8InoM6xGBoDIOepMF_0tuY82P3HJ_idTHjPk")
                 .ConfigureSyncfusionCore()
                 .ConfigureFonts(fonts =>
                 {
