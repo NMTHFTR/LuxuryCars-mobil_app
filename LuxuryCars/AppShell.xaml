@@ -33,12 +33,12 @@
     <ShellContent Title="Rólunk" ContentTemplate="{DataTemplate views:Rolunk}"/>
     <ShellContent Title="Reklám" ContentTemplate="{DataTemplate views:Reklam}"/>
 
-    <!--<FlyoutItem Title="Cars">
+    <FlyoutItem Title="Cars">
     <Tab Title="Autók" >
         <ShellContent ContentTemplate="{DataTemplate views:CarsPage}" Route="books"/>
     </Tab>
     <Tab Title="Keresés">
         <ShellContent ContentTemplate="{DataTemplate views:SearchByName}"/>
-    </Tab>-->
-<!--</FlyoutItem>-->
+    </Tab>
+</FlyoutItem>
 </Shell>

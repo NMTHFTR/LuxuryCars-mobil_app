@@ -32,7 +32,7 @@ namespace LuxuryCars.ViewModels
                 }
                 else
                 {
-                    cars.Clear();
+                    Cars.Clear();
                 }
             }
         }
@@ -52,8 +52,8 @@ namespace LuxuryCars.ViewModels
             var filteredList = from car in list
                                where car.marka_modelnev.ToLower().Contains(name.ToLower())
                                select car;
-            cars.Clear();
-            cars.ToList().ForEach(car => cars.Add(car));
+            Cars.Clear();
+            Cars.ToList().ForEach(car => Cars.Add(car));
         }
 
 

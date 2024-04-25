@@ -6,5 +6,24 @@
     <VerticalStackLayout Margin="10">
         <Label Text="Title: " FontSize="Medium"/>
         <Entry Text="{Binding name}" ReturnCommand="{Binding returnCommand}"/>
+
+        <CollectionView ItemsSource="{Binding Cars}" SelectionMode="Single" Margin="10" Grid.Row="1" SelectedItem="{Binding SelectedCar}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*" Margin="5" BackgroundColor="{StaticResource Gray400}">
+                    <Image Source="{Binding kep_Url}" Grid.RowSpan="2"/>
+                    <Label Text="{Binding marka_modelnev}" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"  Margin="5"/>
+                    <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="5">
+                        <Image Source="{x:StaticResource Seats}"/>
+                        <Label Text="{Binding ferohely}" FontAttributes="Italic" VerticalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" Grid.Column="2" Orientation="Horizontal">
+                        <Image Source="{x:StaticResource HorsePw}"/>
+                        <Label Text="{Binding loero}"  FontAttributes="Italic" VerticalOptions="Center"/>
+                    </StackLayout>
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
     </VerticalStackLayout>
 </ContentPage>
