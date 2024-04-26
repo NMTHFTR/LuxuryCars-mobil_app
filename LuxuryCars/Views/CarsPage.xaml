@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LuxuryCars.Views.CarsPage"
              xmlns:tool="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
-             Title="CarsPage" Background="{StaticResource Gray900}">
+             Title="Autóink" Background="{StaticResource Gray900}">
     <!--https://bgs.jedlik.eu/luxurycars/luxurycars/api/cars-->
     <ContentPage.Behaviors>
         <tool:EventToCommandBehavior Command="{Binding AppearingCommand}" EventName="Appearing"/>
@@ -15,13 +15,13 @@
                 <DataTemplate>
                     <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*" Margin="5" BackgroundColor="{StaticResource Gray400}">
                         <Image Source="{Binding kep_Url}" Grid.RowSpan="2"/>
-                    <Label Text="{Binding marka_modelnev}" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"  Margin="5"/>
+                    <Label Text="{Binding marka_modelnev}" HorizontalOptions="Center" FontSize="16" FontAttributes="Bold"  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"  Margin="5"/>
                     <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="5">
-                        <Image Source="{x:StaticResource Seats}"/>
+                        <Image Source="{x:StaticResource Seats}" Margin="40,0,3,0"/>
                         <Label Text="{Binding ferohely}" FontAttributes="Italic" VerticalOptions="Center"/>
                     </StackLayout>
                     <StackLayout Grid.Row="1" Grid.Column="2" Orientation="Horizontal">
-                            <Image Source="{x:StaticResource HorsePw}"/>
+                            <Image Source="{x:StaticResource HorsePw}" Margin="30,0,3,0"/>
                             <Label Text="{Binding loero}"  FontAttributes="Italic" VerticalOptions="Center"/>
                         </StackLayout>
                 </Grid>
