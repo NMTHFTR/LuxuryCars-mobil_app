@@ -5,7 +5,15 @@
              xmlns:rating="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
              Title="Reklám"
              BackgroundColor="{StaticResource Gray900 }">
-    <Grid RowDefinitions="0.16*,0.46*,0.30*,0.14*">
+    <ScrollView>
+        <StackLayout>
+            <Grid RowDefinitions="*,*,*,*" Margin="0,0,0,200">
+                <Label Text="Minőségi elektronikai eszközöket akarsz vásárolni?" FontSize="20" FontAttributes="Bold" TextColor="{StaticResource Primary}" BackgroundColor="{StaticResource Gray600}" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="20"/>
+                <Image Source="EjuroMagLogo.png" HeightRequest="200"/>
+            </Grid>
+       
+  
+    <Grid  RowDefinitions="0.16*,0.46*,0.30*,0.14*">
         <Grid BackgroundColor="{StaticResource Gray600}"  RowDefinitions="*,*">
         <Label Text="Eleged van hogy mindig elázol?" TextColor="{StaticResource Primary}" FontSize="23" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
             <Label Grid.Row="1" Text="Máté alkalmazásával mindig tudni fogod milyen az időjárás!" TextColor="{StaticResource Primary}" FontSize="19" HorizontalTextAlignment="Center"   />
@@ -49,4 +57,6 @@ A gyerek, a négy fal, hogy senki se szeret''" FontAttributes="Italic" TextColor
         </Grid>
         <ImageButton Grid.Row="3" Source="idojaras.jpg" VerticalOptions="EndAndExpand" WidthRequest="500"/>
     </Grid>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

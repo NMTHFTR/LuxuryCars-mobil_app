@@ -9,6 +9,7 @@ using LuxuryCars.Models;
 using System.Windows.Input;
 using LuxuryCars.API;
 using CommunityToolkit.Maui.Core.Extensions;
+using LuxuryCars.Views;
 
 namespace LuxuryCars.ViewModels
 {
@@ -17,6 +18,8 @@ namespace LuxuryCars.ViewModels
         [ObservableProperty]
         public ObservableCollection<Car> cars;
 
+        [ObservableProperty]
+        Car selectedCar;
 
         private string _name;
 
@@ -26,7 +29,7 @@ namespace LuxuryCars.ViewModels
             set
             {
                 _name = value;
-                if (!string.IsNullOrEmpty(_name))
+                if (!string.IsNullOrEmpty(name))
                 {
                     searchCars();
                 }
@@ -48,14 +51,25 @@ namespace LuxuryCars.ViewModels
 
         private async void searchCars()
         {
-            List<Car> list = ApiFunctions.GetCars();
-            var filteredList = from car in list
-                               where car.marka_modelnev.ToLower().Contains(name.ToLower())
-                               select car;
-            Cars.Clear();
-            Cars.ToList().ForEach(car => Cars.Add(car));
+            List<Car> list = ApiFunctions.GetCars().ToList();
+            var filteredList = list.Where(x => x.marka_modelnev.ToLower().Contains(name.ToLower())).ToList();
+                
+           
+            Cars = filteredList.ToObservableCollection<Car>();
         }
 
+
+        async partial void OnSelectedCarChanged(Car value)
+        {
+            if (SelectedCar != null)
+            {
+                Dictionary<string, object> navParameters = new Dictionary<string, object>()
+                {
+                    {"SelectedCar", SelectedCar}
+                };
+                await Shell.Current.GoToAsync($"{nameof(CarDetailsPage)}", true, navParameters);
+            }
+        }
 
     }
 }

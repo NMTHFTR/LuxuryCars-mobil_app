@@ -28,17 +28,18 @@
         </DataTemplate>
     </Shell.ItemTemplate>
     <ShellContent Title="Főoldal" ContentTemplate="{DataTemplate views:MainPage}"/>
-    <ShellContent Title="Autólista" ContentTemplate="{DataTemplate views:CarsPage}"/>
+    <FlyoutItem Title="Autólista"  >
+        <Tab Title="Autók" >
+            <ShellContent ContentTemplate="{DataTemplate views:CarsPage}" Route="books"/>
+        </Tab>
+        <Tab Title="Keresés">
+            <ShellContent ContentTemplate="{DataTemplate views:SearchByName}"/>
+        </Tab>
+    </FlyoutItem>
+    <!--<ShellContent Title="Autólista" ContentTemplate="{DataTemplate views:CarsPage}"/>-->
     <ShellContent Title="Média tartalmak" ContentTemplate="{DataTemplate views:Fotok}"/>
     <ShellContent Title="Rólunk" ContentTemplate="{DataTemplate views:Rolunk}"/>
     <ShellContent Title="Reklám" ContentTemplate="{DataTemplate views:Reklam}"/>
 
-    <FlyoutItem Title="Cars">
-    <Tab Title="Autók" >
-        <ShellContent ContentTemplate="{DataTemplate views:CarsPage}" Route="books"/>
-    </Tab>
-    <Tab Title="Keresés">
-        <ShellContent ContentTemplate="{DataTemplate views:SearchByName}"/>
-    </Tab>
-</FlyoutItem>
+    
 </Shell>

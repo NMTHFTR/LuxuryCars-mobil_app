@@ -18,11 +18,14 @@ namespace LuxuryCars.API
             var response = await client.SendAsync(request).ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                string resultString = response.Content.ReadAsStringAsync().Result;
-                T? root = JsonSerializer.Deserialize<T>(resultString);
+                string resultString = await response.Content.ReadAsStringAsync();
+                T root = JsonSerializer.Deserialize<T>(resultString);
                 return root;
             }
             return null;
+
+
+            
 
         }
     }
