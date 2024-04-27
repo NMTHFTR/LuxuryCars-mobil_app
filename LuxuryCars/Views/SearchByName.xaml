@@ -4,7 +4,7 @@
              x:Class="LuxuryCars.Views.SearchByName"
              Title="Keresés"  Background="{StaticResource Gray900}">
     <VerticalStackLayout Margin="10">
-        <Label Text="Az autó neve: " FontSize="23" FontAttributes="Bold" TextColor="{StaticResource Primary}"/>
+        <Label Text="Írd be autó nevét: " FontSize="23" FontAttributes="Bold" TextColor="{StaticResource Primary}"/>
         <Entry Text="{Binding name}" TextColor="{StaticResource Gray200}" FontSize="18" ReturnCommand="{Binding returnCommand}"/>
 
         <CollectionView ItemsSource="{Binding Cars}" SelectionMode="Single" Margin="10" Grid.Row="1" SelectedItem="{Binding SelectedCar}">

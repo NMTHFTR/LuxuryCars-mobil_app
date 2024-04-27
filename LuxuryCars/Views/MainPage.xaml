@@ -17,7 +17,7 @@
             <Grid RowDefinitions="*,*,*,*,*">
                 <RoundRectangle Grid.RowSpan="5" CornerRadius="0,40,0,40" Fill="{StaticResource Gray600}"/>
                 <Grid Margin="10,10,0,0" RowDefinitions="*,*,*">
-                    <Label FontSize="12" Text="Értékelés:" FontAttributes="Bold" TextColor="{StaticResource Gray200}"/>
+                    <Label FontSize="12" Text="Értékelés" FontAttributes="Bold" TextColor="{StaticResource Gray200}"/>
                     <Label FontSize="16" Grid.Row="1" Text="5/4,6" FontAttributes="Bold" TextColor="{StaticResource Primary}"/>
                     <rating:SfRating Grid.Row="2" BackgroundColor="Transparent" HorizontalOptions="Start" ItemSize="15" Precision="Exact" Value="4.6">
                         <rating:SfRating.RatingSettings>
@@ -49,7 +49,7 @@
                     <Label FontSize="14" Grid.Row="1" Text="Kiszolgálás" TextColor="{StaticResource Gray200}" />
                 </Grid>
             </Grid>
-            <ImageButton x:Name="kerek_IMG"  Command="{Binding forgasCommand}"  WidthRequest="500" Grid.Column="1" Margin="100,0,0,0" Source="kerek2.png" />
+            <Image x:Name="kerek_IMG"   WidthRequest="500" Grid.Column="1" Margin="100,0,0,0" Source="kerek2.png" />
         </Grid>
         <Grid Grid.Row="3" Margin="20,20,20,0" RowDefinitions=".29*,.71*">
             <Label FontSize="18" Text="Az applikáció célja" FontAttributes="Bold" TextColor="{StaticResource Primary}" VerticalTextAlignment="Center"/>

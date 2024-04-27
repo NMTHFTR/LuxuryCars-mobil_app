@@ -17,27 +17,28 @@
     </Shell.FlyoutHeader>
 
     
+    
 
     <Shell.ItemTemplate>
         <DataTemplate>
             <Grid ColumnDefinitions="2*,8*" RowDefinitions="5*,*" >
                 <Image Source="logo2.png" HeightRequest="45"/>
-                <Label Grid.Column="1" Text="{Binding Title}" TextColor="{StaticResource Gray200}" FontSize="Body" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                <Label Grid.Column="1" Text="{Binding Title}" TextColor="{StaticResource Gray200}" FontSize="Body" VerticalTextAlignment="Center" FontAttributes="Bold" BackgroundColor="{StaticResource Gray900}"/>
                 <Line HeightRequest="2" BackgroundColor="{StaticResource Primary}" Grid.Row="1" Grid.ColumnSpan="2" Margin="10,2,10,2"/>
             </Grid>
         </DataTemplate>
     </Shell.ItemTemplate>
     <ShellContent Title="Főoldal" ContentTemplate="{DataTemplate views:MainPage}"/>
-    <FlyoutItem Title="Autólista"  >
-        <Tab Title="Autók" >
-            <ShellContent ContentTemplate="{DataTemplate views:CarsPage}" Route="books"/>
+    <FlyoutItem Title="Autólista">
+        <Tab Title="Autók" Icon="list" >
+            <ShellContent ContentTemplate="{DataTemplate views:CarsPage}"/>
         </Tab>
-        <Tab Title="Keresés">
+        <Tab Title="Keresés" Icon="list">
             <ShellContent ContentTemplate="{DataTemplate views:SearchByName}"/>
         </Tab>
     </FlyoutItem>
     <!--<ShellContent Title="Autólista" ContentTemplate="{DataTemplate views:CarsPage}"/>-->
-    <ShellContent Title="Média tartalmak" ContentTemplate="{DataTemplate views:Fotok}"/>
+    <ShellContent Title="Galéria" ContentTemplate="{DataTemplate views:Fotok}"/>
     <ShellContent Title="Rólunk" ContentTemplate="{DataTemplate views:Rolunk}"/>
     <ShellContent Title="Reklám" ContentTemplate="{DataTemplate views:Reklam}"/>
 

@@ -11,5 +11,5 @@ namespace LuxuryCars.Views;
             this.BindingContext = vm;
         }
 
-        
-    }
+   
+}
