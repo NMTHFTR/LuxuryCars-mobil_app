@@ -40,7 +40,7 @@
                 </Grid>
 
                 <Grid Grid.Row="3" Margin="10,10,0,0" RowDefinitions="*,*" RowSpacing="0">
-                    <Label FontSize="16" Text="2 év"  FontAttributes="Bold" TextColor="{StaticResource Primary}" VerticalOptions="End"/>
+                    <Label FontSize="16" Text="10 év"  FontAttributes="Bold" TextColor="{StaticResource Primary}" VerticalOptions="End"/>
                     <Label FontSize="14" Grid.Row="1" Text="Tapasztalat" TextColor="{StaticResource Gray200}" />
                 </Grid>
 
