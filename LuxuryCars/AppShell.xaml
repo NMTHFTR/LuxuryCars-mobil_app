@@ -16,8 +16,8 @@
         </Grid>
     </Shell.FlyoutHeader>
 
-    
-    
+
+   
 
     <Shell.ItemTemplate>
         <DataTemplate>
@@ -30,10 +30,10 @@
     </Shell.ItemTemplate>
     <ShellContent Title="Főoldal" ContentTemplate="{DataTemplate views:MainPage}"/>
     <FlyoutItem Title="Autólista">
-        <Tab Title="Autók" Icon="list" >
-            <ShellContent ContentTemplate="{DataTemplate views:CarsPage}"/>
+        <Tab Title="Autók" Icon="{x:StaticResource List}">
+           <ShellContent ContentTemplate="{DataTemplate views:CarsPage}"/>
         </Tab>
-        <Tab Title="Keresés" Icon="list">
+        <Tab Title="Keresés" Icon="{x:StaticResource Search}">
             <ShellContent ContentTemplate="{DataTemplate views:SearchByName}"/>
         </Tab>
     </FlyoutItem>
