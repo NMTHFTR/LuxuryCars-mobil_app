@@ -42,9 +42,10 @@ namespace LuxuryCars.ViewModels
         async void Appearing()
         {
             Cars = ApiFunctions.GetCars().ToObservableCollection();
+            SecureStorage.SetAsync("Cars", JsonSerializer.Serialize(Cars));
         }
 
 
-
+        
     }
 }

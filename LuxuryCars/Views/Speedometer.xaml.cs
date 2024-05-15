@@ -35,6 +35,8 @@ public partial class Speedometer : ContentPage
     private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
     {
         double osszsebesseg = Math.Sqrt((e.Reading.Acceleration.Y * e.Reading.Acceleration.Y) + (e.Reading.Acceleration.X * e.Reading.Acceleration.X) + (e.Reading.Acceleration.Z * e.Reading.Acceleration.Z));
+        osszsebesseg=osszsebesseg*3.6;
+        osszsebesseg = Math.Round(osszsebesseg, 1);
         //sebesseg.TextColor = Colors.Green;
         sebesseg.Text = $"{osszsebesseg} km/h";
 
