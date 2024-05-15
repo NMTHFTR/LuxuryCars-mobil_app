@@ -5,7 +5,7 @@
              Title="Sebességmérő" BackgroundColor="{StaticResource Gray900}">
     <Grid >
         <!--<Button Clicked="Button_Clicked" Text="Mérés" BackgroundColor="{StaticResource Gray600}" HeightRequest="40"/>-->
-        <Label HorizontalOptions="Center" VerticalOptions="Center" x:Name="sebesseg" TextColor="White" FontSize="40" />
+        <Label HorizontalOptions="Center" VerticalOptions="Center" x:Name="Sebesseg" TextColor="White" FontSize="40" />
         <!--<Label Text="valami"/>-->
     </Grid>
 </ContentPage>
