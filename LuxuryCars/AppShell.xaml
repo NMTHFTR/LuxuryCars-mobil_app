@@ -39,8 +39,8 @@
     </FlyoutItem>
     <!--<ShellContent Title="Autólista" ContentTemplate="{DataTemplate views:CarsPage}"/>-->
     <ShellContent Title="Galéria" ContentTemplate="{DataTemplate views:Fotok}"/>
+    <ShellContent Title="Sebességmérő" ContentTemplate="{DataTemplate views:Speedometer}"/>
     <ShellContent Title="Rólunk" ContentTemplate="{DataTemplate views:Rolunk}"/>
     <ShellContent Title="Reklám" ContentTemplate="{DataTemplate views:Reklam}"/>
 
-    
 </Shell>
