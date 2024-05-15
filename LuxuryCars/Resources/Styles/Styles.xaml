@@ -7,6 +7,8 @@
 
     <FontImage x:Key="Seats" FontFamily="FontAwesome" Size="14" Glyph="{x:Static res:IconFonts.UserFriends}" Color="Black"/>
     <FontImage x:Key="HorsePw" FontFamily="FontAwesome" Size="14" Glyph="{x:Static res:IconFonts.HorseHead}" Color="Black"/>
+    <FontImage x:Key="Search" FontFamily="FontAwesome" Size="14" Glyph="{x:Static res:IconFonts.Search}" Color="Black"/>
+    <FontImage x:Key="List" FontFamily="FontAwesome" Size="14" Glyph="{x:Static res:IconFonts.List}" Color="Black"/>
 
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
