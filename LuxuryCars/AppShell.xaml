@@ -29,7 +29,7 @@
         </DataTemplate>
     </Shell.ItemTemplate>
     <ShellContent Title="Főoldal" ContentTemplate="{DataTemplate views:MainPage}"/>
-    <FlyoutItem Title="Autólista">
+    <FlyoutItem Title="Autólista" Route="autolista">
         <Tab Title="Autók" Icon="{x:StaticResource List}">
            <ShellContent ContentTemplate="{DataTemplate views:CarsPage}"/>
         </Tab>
@@ -39,8 +39,8 @@
     </FlyoutItem>
     <!--<ShellContent Title="Autólista" ContentTemplate="{DataTemplate views:CarsPage}"/>-->
     <ShellContent Title="Galéria" ContentTemplate="{DataTemplate views:Fotok}"/>
-    <ShellContent Title="Sebességmérő" ContentTemplate="{DataTemplate views:Speedometer}"/>
+    <!--<ShellContent Title="Sebességmérő" ContentTemplate="{DataTemplate views:Speedometer}"/>-->
     <ShellContent Title="Rólunk" ContentTemplate="{DataTemplate views:Rolunk}"/>
-    <ShellContent Title="Reklám" ContentTemplate="{DataTemplate views:Reklam}"/>
+    <!--<ShellContent Title="Reklám" ContentTemplate="{DataTemplate views:Reklam}"/>-->
 
 </Shell>

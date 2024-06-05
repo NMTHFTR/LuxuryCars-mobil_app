@@ -6,7 +6,72 @@
              Title="{Binding SelectedCar.marka_modelnev}" BackgroundColor="{StaticResource Gray900}">
     
     <ScrollView>
-        <StackLayout>
+        <Grid Margin="10" RowDefinitions="0.4*,0.1*,0.16*,0.45*">
+            <Border Grid.RowSpan="2">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20,20,20,20"/>
+                </Border.StrokeShape>
+                <Grid RowDefinitions="0.3*,0.7*">
+                    <Image  Grid.RowSpan="2" Aspect="AspectFill" Source="{Binding SelectedCar.kep_Url}" />
+
+                    <Grid ColumnDefinitions="*,*">
+                        <Border Margin="15,35,0,0" BackgroundColor="{StaticResource Gray600}" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" VerticalOptions="Start">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+                            </Border.StrokeShape>
+                            <ImageButton Source="{x:StaticResource Speed}"  VerticalOptions="Center" HorizontalOptions="Center" Command="{Binding goToSebesseg}" />
+                        </Border>
+
+
+                        <Border Grid.Column="1" Margin="0,35,15,0" BackgroundColor="{StaticResource Gray600}" HeightRequest="50" WidthRequest="50" HorizontalOptions="End" VerticalOptions="Start">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+                            </Border.StrokeShape>
+                            <ImageButton Source="{x:StaticResource Question}"   VerticalOptions="Center" HorizontalOptions="Center" Command="{Binding goToRolunk}" />
+                        </Border>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="1" Grid.RowSpan="2" Stroke="{StaticResource Gray600Brush}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30"/>
+                </Border.StrokeShape>
+
+
+                <Grid Padding="20" BackgroundColor="{StaticResource Gray600}" ColumnDefinitions="0.5*,0.25*,0.25*" RowDefinitions="*,*,*" >
+                    <Label Text="Az autó lóereje:" Grid.ColumnSpan="2" FontAttributes="Bold" FontSize="19" TextColor="{StaticResource Gray200}"/>
+                    <Label Text="{Binding SelectedCar.loero,StringFormat='{0} Le'}" Grid.Column="2" FontSize="19" FontAttributes="Bold"  TextColor="{StaticResource Primary}"/>
+                    <Label Text="Az autó férőhelye:" Grid.Row="1" Grid.ColumnSpan="2" FontAttributes="Bold" FontSize="19" TextColor="{StaticResource Gray200}"/>
+                    <Label Text="{Binding SelectedCar.ferohely,StringFormat='{0} fő'}" Grid.Row="1" Grid.Column="2" FontSize="19" FontAttributes="Bold"  TextColor="{StaticResource Primary}"/>
+                    <Label Text="Elérhető a weblapon!" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,34,0,0" FontSize="14" TextColor="{StaticResource Gray200}"/>
+                    <Button  Text="Fotglald le most"  Grid.Row="2"  Grid.ColumnSpan="3" WidthRequest="150" Margin="175,22,0,0" BackgroundColor="{StaticResource Primary}" TextColor="White" FontAttributes="Bold" CornerRadius="20" Command="{Binding goToCars}"/>
+                </Grid>
+            </Border>
+
+            <Grid Grid.Row="3" Margin="10,12,10,10" RowDefinitions="0.15*,0.87*,0.1*" >
+                
+                    <Label Text="Leírás: (angol nyelven)" TextColor="{StaticResource Primary}" FontSize="20" FontAttributes="Bold" Margin="0,0,0,0"/>
+                
+                    <Label FontSize="14" LineHeight="1.4" Grid.Row="1" >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{Binding SelectedCar.leiras}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                <Button  Text="Fotók és videók"  Grid.Row="2"  WidthRequest="370" FontSize="20" Margin="0,-30,0,0" BackgroundColor="{StaticResource Primary}" TextColor="Black" FontAttributes="Bold" CornerRadius="30"  Command="{Binding goToFotok}"/>
+
+            </Grid>
+            
+             
+        </Grid>
+
+
+       
+
+        <!--<StackLayout>
         <Image Source="{Binding SelectedCar.kep_Url}" VerticalOptions="StartAndExpand" WidthRequest="490"/>
         <Grid Margin="10,20,10,0" >
             <RoundRectangle CornerRadius="40,40,40,40" HeightRequest="70" Fill="{StaticResource Gray600}"/>
@@ -25,7 +90,7 @@
 
 
             <Button Text="Lefoglalás most" Grid.Row="3" Margin="10,40,10,10" Command="{Binding goToCars}" VerticalOptions="EndAndExpand"  FontSize="20"/>
-        </StackLayout>
+        </StackLayout>-->
     </ScrollView>
        
     

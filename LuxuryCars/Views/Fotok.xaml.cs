@@ -13,14 +13,14 @@ public partial class Fotok : ContentPage
 		InitializeComponent();
         
           var items=new List<CollectionItem> {
-            new CollectionItem{title="https://s1.cdn.autoevolution.com/images/gallery/BENTLEY-Continental-GTC-6460_13.jpg"},
-            new CollectionItem{title="https://s1.cdn.autoevolution.com/images/gallery/ROLLS-ROYCE-Wraith-4791_29.jpg"},
-            new CollectionItem{title="https://s1.cdn.autoevolution.com/images/gallery/NISSAN-GT-R-5603_18.jpg"},
-            new CollectionItem{title="https://s1.cdn.autoevolution.com/images/gallery/BUGATTI-Chiron-5583_35.jpg"},
-            new CollectionItem{title="https://s1.cdn.autoevolution.com/images/gallery/DODGE-Challenger-SRT-Demon-5978_19.jpg"},
+            new CollectionItem{image="https://s1.cdn.autoevolution.com/images/gallery/BENTLEY-Continental-GTC-6460_13.jpg",name = "sziszi"},
+            new CollectionItem{image="https://s1.cdn.autoevolution.com/images/gallery/ROLLS-ROYCE-Wraith-4791_29.jpg", name = "akukas"},
+            new CollectionItem{image="https://s1.cdn.autoevolution.com/images/gallery/NISSAN-GT-R-5603_18.jpg", name = "szeméttelep"},
+            new CollectionItem{image="https://s1.cdn.autoevolution.com/images/gallery/BUGATTI-Chiron-5583_35.jpg", name = "stb"},
+            new CollectionItem{image="https://s1.cdn.autoevolution.com/images/gallery/DODGE-Challenger-SRT-Demon-5978_19.jpg",name="idk"},
         };
         CaruselView.ItemsSource = items;
-        
+
     }
 
     private async void Button_Clicked(object sender, EventArgs e)

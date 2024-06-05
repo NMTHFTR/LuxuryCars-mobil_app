@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using LuxuryCars.Models;
+using LuxuryCars.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,10 @@ namespace LuxuryCars.ViewModels
 
         public ICommand goToCars { get; set; }
 
+        public ICommand goToSebesseg { get; set; }
+        public ICommand goToRolunk { get; set; }
+        public ICommand goToFotok { get; set; }
+
         public CarDetailsViewModel()
         {
             goToCars = new Command(async () => {
@@ -31,11 +36,22 @@ namespace LuxuryCars.ViewModels
                     // An unexpected error occurred. No browser may be installed on the device.
                 }
             });
+            goToSebesseg = new Command(async () => {
+                await Shell.Current.GoToAsync(nameof(Speedometer));
+            });
 
+            goToRolunk = new Command(async () => {
+                await Shell.Current.GoToAsync(nameof(Rolunk));
+            });
 
-
-           
+            goToFotok = new Command(async () => {
+                await Shell.Current.GoToAsync(nameof(Fotok));
+            });
         }
+
+      
+
+        
 
     }
 

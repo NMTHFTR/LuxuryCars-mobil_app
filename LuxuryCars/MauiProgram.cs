@@ -32,6 +32,10 @@ namespace LuxuryCars
             builder.Services.AddSingleton<CarDetailsViewModel>();
             builder.Services.AddSingleton<SearchByName>();
             builder.Services.AddSingleton<SearchByNameViewModel>();
+            builder.Services.AddSingleton<Speedometer>();
+            builder.Services.AddSingleton<Rolunk>();
+            builder.Services.AddSingleton<Fotok>();
+         
 
 #if DEBUG
             builder.Logging.AddDebug();
