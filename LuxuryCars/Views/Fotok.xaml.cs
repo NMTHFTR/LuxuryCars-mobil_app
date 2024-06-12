@@ -21,6 +21,15 @@ public partial class Fotok : ContentPage
         };
         CaruselView.ItemsSource = items;
 
+
+        var items2 = new List<CollectionItem> {
+            new CollectionItem{image="embed://911_GT3.mp4",name = "sziszi"},
+            new CollectionItem{image="embed://Ferrari_488_GTB.mp4", name = "akukas"},
+            new CollectionItem{image="embed://Lamborghini.mp4", name = "szeméttelep"},
+            new CollectionItem{image="embed://M8.mp4", name = "stb"},
+        };
+        CaruselView2.ItemsSource = items;
+
     }
 
     private async void Button_Clicked(object sender, EventArgs e)

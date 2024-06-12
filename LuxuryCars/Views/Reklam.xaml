@@ -64,7 +64,7 @@ A gyerek, a négy fal, hogy senki se szeret''" FontAttributes="Italic" TextColor
 
 
         </Grid>
-        <!--<ImageButton Grid.Row="3" Source="idojaras.jpg" VerticalOptions="EndAndExpand" WidthRequest="500"/>-->
+        
     </Grid>
         </StackLayout>
     </ScrollView>
