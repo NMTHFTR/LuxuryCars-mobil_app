@@ -30,7 +30,7 @@
                         </Grid>
                     </DataTemplate>
         </CarouselView.ItemTemplate>
-    </CarouselView>
+    </CarouselView>    
     <IndicatorView x:Name="indicatorView" Margin="5" HorizontalOptions="Center" IndicatorColor="{StaticResource Gray200}" SelectedIndicatorColor="{StaticResource Primary}"/>
  
     <Label Text="Videók:" TextColor="{StaticResource Gray200}" FontAttributes="Bold" FontSize="19" HorizontalOptions="Center" Margin="0,40,0,0"/>
