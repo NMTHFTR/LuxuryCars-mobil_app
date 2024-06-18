@@ -6,13 +6,13 @@
              Title="{Binding SelectedCar.marka_modelnev}" BackgroundColor="{StaticResource Gray900}">
     
     <ScrollView>
-        <Grid Margin="10" RowDefinitions="0.4*,0.1*,0.16*,0.45*">
+        <Grid Margin="10,10,10,10" RowDefinitions="4*,1*,1*,4*">
             <Border Grid.RowSpan="2">
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="20,20,20,20"/>
                 </Border.StrokeShape>
                 <Grid RowDefinitions="0.3*,0.7*">
-                    <Image  Grid.RowSpan="2" Aspect="AspectFill" Source="{Binding SelectedCar.kep_Url}" />
+                    <Image  Grid.RowSpan="2" Aspect="AspectFill" Source="{Binding SelectedCar.kep_Url}"/>
 
                     <Grid ColumnDefinitions="*,*">
                         <Border Margin="15,35,0,0" BackgroundColor="{StaticResource Gray600}" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" VerticalOptions="Start">
@@ -33,7 +33,7 @@
                 </Grid>
             </Border>
 
-            <Border Grid.Row="1" Grid.RowSpan="2" Stroke="{StaticResource Gray600Brush}">
+            <Border Grid.Row="1" Grid.RowSpan="2" Stroke="{StaticResource Gray600Brush}" Margin="0,70,0,20">
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="30"/>
                 </Border.StrokeShape>
@@ -44,19 +44,19 @@
                     <Label Text="{Binding SelectedCar.loero,StringFormat='{0} Le'}" Grid.Column="2" FontSize="19" FontAttributes="Bold"  TextColor="{StaticResource Primary}"/>
                     <Label Text="Az autó férőhelye:" Grid.Row="1" Grid.ColumnSpan="2" FontAttributes="Bold" FontSize="19" TextColor="{StaticResource Gray200}"/>
                     <Label Text="{Binding SelectedCar.ferohely,StringFormat='{0} fő'}" Grid.Row="1" Grid.Column="2" FontSize="19" FontAttributes="Bold"  TextColor="{StaticResource Primary}"/>
-                    <Label Text="Elérhető a weblapon!" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,34,0,0" FontSize="14" TextColor="{StaticResource Gray200}"/>
-                    <Button  Text="Fotglald le most"  Grid.Row="2"  Grid.ColumnSpan="3" WidthRequest="150" Margin="175,22,0,0" BackgroundColor="{StaticResource Primary}" TextColor="White" FontAttributes="Bold" CornerRadius="20" Command="{Binding goToCars}"/>
+                    <Label Text="Elérhető a weblapon!" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,10,0,0" FontSize="14" TextColor="{StaticResource Gray200}"/>
+                    <Button  Text="Fotglald le most"  Grid.Row="2"  Grid.ColumnSpan="3" WidthRequest="150" HeightRequest="40" Margin="175,0,0,0" BackgroundColor="{StaticResource Primary}" TextColor="White" FontAttributes="Bold" CornerRadius="20" Command="{Binding goToCars}"/>
                 </Grid>
             </Border>
 
-            <Grid Grid.Row="3" Margin="10,12,10,10" RowDefinitions="0.15*,0.87*,0.1*" >
+            <Grid Grid.Row="3" Margin="10,0,10,10" RowDefinitions="0.15*,0.87*,0.1*" >
                 
-                    <Label Text="Leírás: (angol nyelven)" TextColor="{StaticResource Primary}" FontSize="20" FontAttributes="Bold" Margin="0,0,0,0"/>
+                    <Label Text="Leírás: (angol nyelven)" TextColor="{StaticResource Primary}" FontSize="20" FontAttributes="Bold" Margin="0,0,0,7"/>
                 
-                    <Label FontSize="14" LineHeight="1.4" Grid.Row="1" >
+                    <Label FontSize="14" LineHeight="1.4" Grid.Row="1" HeightRequest="200">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="{Binding SelectedCar.leiras}"/>
+                            <Span Text="{Binding SelectedCar.leiras}" FontSize="14" TextColor="{StaticResource Gray200}" />
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>

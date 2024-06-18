@@ -15,7 +15,7 @@ public partial class Fotok : ContentPage
           var items=new List<CollectionItem> {
             new CollectionItem{image="https://s1.cdn.autoevolution.com/images/gallery/BENTLEY-Continental-GTC-6460_13.jpg",name = "sziszi"},
             new CollectionItem{image="https://s1.cdn.autoevolution.com/images/gallery/ROLLS-ROYCE-Wraith-4791_29.jpg", name = "akukas"},
-            new CollectionItem{image="https://s1.cdn.autoevolution.com/images/gallery/NISSAN-GT-R-5603_18.jpg", name = "szeméttelep"},
+            new CollectionItem{image="https://s1.cdn.autoevolution.com/images/gallery/NISSAN-GT-R-5603_18.jpg", name = "aaa"},
             new CollectionItem{image="https://s1.cdn.autoevolution.com/images/gallery/BUGATTI-Chiron-5583_35.jpg", name = "stb"},
             new CollectionItem{image="https://s1.cdn.autoevolution.com/images/gallery/DODGE-Challenger-SRT-Demon-5978_19.jpg",name="idk"},
         };
@@ -25,10 +25,10 @@ public partial class Fotok : ContentPage
         var items2 = new List<CollectionItem> {
             new CollectionItem{image="embed://911_GT3.mp4",name = "sziszi"},
             new CollectionItem{image="embed://Ferrari_488_GTB.mp4", name = "akukas"},
-            new CollectionItem{image="embed://Lamborghini.mp4", name = "szeméttelep"},
+            new CollectionItem{image="embed://Lamborghini.mp4", name = "aaaa"},
             new CollectionItem{image="embed://M8.mp4", name = "stb"},
         };
-        CaruselView2.ItemsSource = items;
+        //CaruselView2.ItemsSource = items;
 
     }
 
