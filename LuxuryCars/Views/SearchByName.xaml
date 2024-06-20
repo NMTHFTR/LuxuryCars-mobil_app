@@ -6,7 +6,7 @@
     <VerticalStackLayout Margin="0">
         
         
-        <Label Text="Írd be autó nevét: " Margin="25,15,0,5" FontSize="23" FontAttributes="Bold" TextColor="{StaticResource Primary}"/>
+        <Label Text="Írd be az autó nevét: " Margin="25,15,0,5" FontSize="23" FontAttributes="Bold" TextColor="{StaticResource Primary}"/>
         <Border StrokeThickness="5" Padding="10" Margin="10,0,10,0">
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="30"/>
